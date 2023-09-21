@@ -13,7 +13,7 @@
   width: 60%;
   position: absolute;
   top: 30%;
-  left: 20%;
+  left: 15%;
   border: 1px solid black;
   border-radius: 10px;
   display: none;
@@ -86,4 +86,26 @@
 .closeModalButton:hover {
   color: rgb(94, 94, 179);
   cursor: pointer;
+}
+
+.modalForm-inputContainer {
+  position: relative;
+}
+
+.modalForm-input {
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 0.09rem;
+}
+
+.modalForm-label {
+  position: absolute;
+  left: 1%;
+  top: 6%;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.modalForm-label::first-letter {
+  color: red;
 }
