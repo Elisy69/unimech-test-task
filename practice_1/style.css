@@ -1,0 +1,89 @@
+.container {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  z-index: 3;
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.modal-open {
+  display: flex;
+}
+
+.overlay {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 10%;
+  display: none;
+}
+
+.overlay-active {
+  display: block;
+}
+
+.modalForm {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modalForm-inputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalForm-input {
+  width: 100%;
+  height: 1.5rem;
+}
+
+.modalForm-submit-button {
+  width: 100%;
+  height: 2rem;
+  border: 0px;
+  background-color: #e5266e;
+  color: white;
+}
+
+.modalForm-submit-button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 10px 0px;
+  cursor: pointer;
+}
+
+.closeModalButton {
+  width: 100%;
+  height: 2rem;
+  background-color: white;
+  border: 0px;
+  color: blue;
+}
+.closeModalButton:hover {
+  color: rgb(94, 94, 179);
+  cursor: pointer;
+}

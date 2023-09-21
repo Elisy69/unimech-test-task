@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="openModalButton">Open modal</button>
+      <div class="modal">
+        <h1 class="modalForm-headline">Submit your form</h1>
+        <form class="modalForm">
+          <div class="modalForm-inputContainer">
+            <input
+              class="modalForm-input"
+              placeholder="Name"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="modalForm-inputContainer">
+            <input
+              class="modalForm-input"
+              placeholder="Email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <input class="modalForm-submit-button" type="submit" value="Submit" />
+          <button class="closeModalButton">Cancel</button>
+        </form>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </body>
+  <script type="module" src="form.js"></script>
+</html>
